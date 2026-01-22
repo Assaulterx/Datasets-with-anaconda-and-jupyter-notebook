@@ -1,0 +1,13 @@
+import pandas as pd     // import pandas libraries to the notebook
+df=pd.read_csv("C:\Users\Piyush\Documents\Data Science\Datasets-with-anaconda-and-jupyter-notebook\expanded_streaming_titles_2022_2026.csv")   // df can be replaced with any name as we want to import the dataset (.csv file from the local directory)
+df    // given name for the dataset and also displays the dataset as a command
+df.isnull()     or     df.isna()     //  To check the empty or null dataset values from the columns and rows 
+df.isna().sum()     or      df.isnull().sum()     //  To check the total empty or null dataset values from the columns and rows 
+df.describe()      // It describes the count, mean, std deviation, min, max values
+df.head()          //It displays the first five rows by default if the function value is empty
+df.tail()          //It displays the last five rows by default if the function value is empty
+df.shape           //It shows total number of columns and rows
+df.shape[]         //It displays total the rows for [0] and columns for [1] 
+df.dtypes          //Displays the data types of all columns 
+df["column"]=df["column"].astype(datatype to be converted into)    //changes the datatype of the particular column   
+df["column"]=df["column"].map({"column_value":int,"column_value":int,"column_value":int})  //This line is used to replace the values in a column with new values according to a lookup dictionary.
