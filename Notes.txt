@@ -11,3 +11,4 @@ df.shape[]         //It displays total the rows for [0] and columns for [1]
 df.dtypes          //Displays the data types of all columns 
 df["column"]=df["column"].astype(datatype to be converted into)    //changes the datatype of the particular column   
 df["column"]=df["column"].map({"column_value":int,"column_value":int,"column_value":int})  //This line is used to replace the values in a column with new values according to a lookup dictionary.
+df.notnull()       // To check if the values are filled data values from the columns
