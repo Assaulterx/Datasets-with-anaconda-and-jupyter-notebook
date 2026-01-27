@@ -12,3 +12,6 @@ df.dtypes          //Displays the data types of all columns
 df["column"]=df["column"].astype(datatype to be converted into)    //changes the datatype of the particular column   
 df["column"]=df["column"].map({"column_value":int,"column_value":int,"column_value":int})  //This line is used to replace the values in a column with new values according to a lookup dictionary.
 df.notnull()       // To check if the values are filled data values from the columns
+df.info()          // Displays Non-Null count, data types of the columns and also range index of the dataset.
+df.dropna()        // This function replaces the null values with some other values like mean, etc.
+df["column"] = df["column"].replace(np.nan, value_to_be_entered)   
