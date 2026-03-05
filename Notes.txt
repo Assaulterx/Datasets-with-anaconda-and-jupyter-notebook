@@ -15,3 +15,23 @@ df.notnull()       // To check if the values are filled data values from the col
 df.info()          // Displays Non-Null count, data types of the columns and also range index of the dataset.
 df.dropna()        // This function replaces the null values with some other values like mean, etc.
 df["column"] = df["column"].replace(np.nan, value_to_be_entered)   
+
+
+
+
+
+train_test_split -> Splits dataset into:
+Training set (to train the model)
+Training set (to evaluate performance)
+
+accuracy_score -> How many predictions were correct?
+
+precision -> How many predicted positives were actually correct.
+
+recall -> Out of actual positives, how many were correctly identified?
+
+f1_score -> Balance between precision and recall.
+
+confusion_matrix -> Shows correct and wrong predictions in table form.
+
+classification_report -> Gives all scores together.
